@@ -19,6 +19,11 @@ PRODUCT_COPY_FILES += \
     $(shell tar -zxf vendor/gapps/common/proprietary/product/priv-app/Velvet/Velvet.apk.tar.gz -C vendor/gapps/common/proprietary/product/priv-app/Velvet/)
 endif
 
+ifeq ($(wildcard vendor/gapps/common/proprietary/product/app/Photos/Photos.apk),)
+PRODUCT_COPY_FILES += \
+    $(shell tar -zxf vendor/gapps/common/proprietary/product/app/Photos/Photos.apk.tar.gz -C vendor/gapps/common/proprietary/product/app/Photos/)
+endif
+
 LOCAL_DEVICE := $(lastword $(subst _, ,$(TARGET_PRODUCT)))
 
 # Include Overlays
