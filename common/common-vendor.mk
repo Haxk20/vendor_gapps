@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     GoogleContacts \
     GoogleContactsSyncAdapter \
     GoogleTTS \
+    GoogleRestorePrebuilt \
     LatinIMEGooglePrebuilt \
     LocationHistoryPrebuilt \
     MarkupGoogle \
